@@ -11,17 +11,20 @@ h1 {
 body {
     background-image: url(https://images.unsplash.com/photo-1646425111739-de69fef33bc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1502&q=80);
     background-size: cover;
+    margin: 0%;
 }
 .bftitle {
     color: #406169;
     cursor: default;
     text-align: left;
+
     
 }
 img {
     float: middle;
     width: 220;
     height: 340;
+    transition: all 1s;
 }
 p {
     color: black;
@@ -36,16 +39,40 @@ p {
     align-items: center;
     list-style: none;
     display: inline-block;
-    background:rgba(145, 211, 226, 0.288);
+    background:rgb(145, 211, 226);
+    border: 1px solid #5B787E;
+    padding: 2px 5px 2px 5px;
+    margin: 2px 5px 2px 5px;
+    border-radius: 5px;
+    font-size: 125%;
 }
-.friends {
-    text-align: start;
-    display: inline-block;
+#friends {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background:rgba(145, 211, 226, 0.288);
+    border-bottom: 2px solid #406169;
+}
+.Zijad:hover {
+    transform: scale(1.1);
+}
+.Hazim:hover {
+    transform: scale(1.1);
+}
+.Bakir:hover {
+    transform: scale(1.1);
+}
+.Amar:hover {
+    transform: scale(1.1);
 }
 #div1 {
     background: rgba(73, 115, 124, 0.116)
 }
 .aboutme {
     text-align: left;
+    border-bottom: 2px solid #406169;
+    border-top: 2px solid #406169;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
