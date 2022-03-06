@@ -1,0 +1,22 @@
+/* @keyframes shrink {
+    from {
+        padding: 10px 32px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+    to {
+        padding: 20px 42px;
+        font-size: 26px;
+        border-radius: 20px;
+    }
+} */
+.abutton {
+    padding: 20px 42px;
+    font-size: 26px;
+    border-radius: 20px;
+    transition: all 0.4s;
+    margin: 10px 25px 0px 25px;
+    text-align: right;
+}
+/*     animation-name: shrink;
+    animation-duration: 2s; */

@@ -2,12 +2,12 @@
     text-align: center;
 }
 
-h1 {
+/* h1 {
     color: #406169;
     text-align: center;
     border: 2px solid #5B787E;
     cursor: default;
-}
+} */
 body {
     background-image: url(https://images.unsplash.com/photo-1646425111739-de69fef33bc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1502&q=80);
     background-size: cover;
@@ -17,8 +17,9 @@ body {
     color: #406169;
     cursor: default;
     text-align: left;
-
-    
+}
+.imgcaption {
+    margin-top: 17px;
 }
 img {
     float: middle;
@@ -50,8 +51,8 @@ p {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    background:rgba(145, 211, 226, 0.288);
+    justify-content: space-around;
+    background:rgba(94, 120, 126, 0.24);
     border-bottom: 2px solid #406169;
 }
 .Zijad:hover {
@@ -67,7 +68,7 @@ p {
     transform: scale(1.1);
 }
 #div1 {
-    background: rgba(73, 115, 124, 0.116)
+    background: rgba(73, 115, 124, 0.116);
 }
 .aboutme {
     text-align: left;
@@ -75,4 +76,26 @@ p {
     border-top: 2px solid #406169;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+.hbutton, .rbutton, .abutton {
+    background-color: rgb(99, 161, 175);
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: all 0.4s;
+    margin: 10px 25px 0px 25px
+  }
+.hbutton:hover, .rbutton:hover, .abutton:hover {
+    background-color: rgb(61, 105, 114);
+}
+.iBakir, .iAmar, .iHazim, .iZijad {
+    font-family: 'Hubballi', cursive;
+    font-size: 150%;
+    font-weight: bold;
+    cursor: pointer;
 }
