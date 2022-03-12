@@ -1,109 +1,190 @@
-* {
+/*TOGETHER*/
+
+body {
+    margin: auto 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.zone {
+    /* padding: 30px 50px;
+    margin: 40px 60px; */
+    /* display: inline-block; */
+    color: #FFF;
+    font-size: 2em;
+    /* border: 1px solid #bbb; */
+    transition: all 0.3s linear;
+    position:relative;
+    z-index:1;
+    cursor: default;
+    -webkit-box-shadow:rgba(0,0,0,0.2) 0px 5px 15px, inset rgba(0,0,0,0.3) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.2) 0px 5px 15px, inset rgba(0,0,0,0.3) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.2) 0px 5px 15px, inset rgba(0,0,0,0.3) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.2) 0px 5px 15px, inset rgba(0,0,0,0.3) 0px -10px 20px;
+}
+
+/* .zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+} */
+
+.box:hover {
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
+    transform: rotate(1deg);
+    overflow:hidden;
+}
+
+/*NAVIGATION*/
+
+.nav {
+    border-bottom: 1px solid #FFF;
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+.push {
+    margin-left: auto;
+}
+
+li {
+    padding: 20px;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:2;
+}
+
+/*COVER*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.img-fit {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 8px #000000;
+    letter-spacing: 7px;
+  }
+
+/*GRID*/
+
+.grid-about {
+    display: grid;
+    grid-gap: 20px;
     text-align: center;
 }
 
-/* h1 {
-    color: #406169;
+.grid-wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box > img {
+    width: 100%;
+}
+
+.box {
+    background-color: #444;
+    padding: 100px;
+    margin: 40px;
+    cursor: pointer;
+}
+
+footer {
     text-align: center;
-    border: 2px solid #5B787E;
-    cursor: default;
-} */
-body {
-    background-image: url(https://images.unsplash.com/photo-1646425111739-de69fef33bc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1502&q=80);
-    background-size: cover;
-    background-position: center;
-    margin: 0%;
 }
-.bftitle {
-    color: #406169;
-    cursor: default;
-    text-align: left;
+
+/*COLORS*/
+
+.green {
+    background: rgb(22, 158, 33);
+    background: linear-gradient(180deg, rgb(15, 145, 25) 5%, rgb(72, 243, 118) 100%);
+    background: -moz-linear-gradient(180deg, rgb(15, 145, 25) 5%, rgb(72, 243, 118) 100%);
+    background: -o-linear-gradient(180deg, rgb(15, 145, 25) 5%, rgb(72, 243, 118) 100%);
 }
-.imgcaption {
-    margin-top: 17px;
+
+.red {
+    background: rgb(207, 22, 22);
+    background: linear-gradient(180deg, rgb(168, 18, 18) 5%, rgb(243, 72, 72) 100%);
+    background: -moz-linear-gradient(180deg, rgb(168, 18, 18) 5%, rgb(243, 72, 72) 100%);
+    background: -o-linear-gradient(180deg, rgb(168, 18, 18) 5%, rgb(243, 72, 72) 100%);
 }
-img {
-    float: middle;
-    width: 220;
-    height: 340;
-    transition: all 1s;
+
+.blue {
+    background: rgb(27, 112, 192);
+    background: linear-gradient(180deg, rgb(33, 79, 206) 5%, rgb(72, 132, 243) 100%);
+    background: -moz-linear-gradient(180deg, rgb(33, 79, 206) 5%, rgb(72, 132, 243) 100%);
+    background: -o-linear-gradient(180deg, rgb(33, 79, 206) 5%, rgb(72, 132, 243) 100%);
 }
-p {
+
+.yellow {
+    background: rgb(200, 212, 25);
+    background: linear-gradient(180deg, rgb(184, 181, 20) 5%, rgb(240, 243, 72) 100%);
+    background: -moz-linear-gradient(180deg, rgb(184, 181, 20) 5%, rgb(240, 243, 72) 100%);
+    background: -o-linear-gradient(180deg, rgb(184, 181, 20) 5%, rgb(240, 243, 72) 100%);
+}
+
+.white {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgb(165, 165, 165) 5%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%);
+    background: -moz-linear-gradient(180deg, rgb(165, 165, 165) 5%, rgb(255, 255, 255) 100%);
+    background: -o-linear-gradient(180deg, rgb(165, 165, 165) 5%, rgb(255, 255, 255) 100%);
+}
+
+.text-black {
     color: black;
-    cursor: default;
-    width: "220";
-    height: "310"
 }
-.nav {
-    clear: both;
+
+/*ALIGN*/
+.align-left {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    display: inline-block;
-    background:rgb(145, 211, 226);
-    border: 1px solid #5B787E;
-    padding: 2px 5px 2px 5px;
-    margin: 2px 5px 2px 5px;
-    border-radius: 5px;
-    font-size: 125%;
+    align-self: start;
+    justify-content: left;
+    align-items: left;
+    margin-right: auto;
 }
-#friends {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background:rgba(94, 120, 126, 0.24);
-    border-bottom: 2px solid #406169;
+
+.subscribe {
+    font-size: 70%;
 }
-.Zijad:hover {
-    transform: scale(1.1);
-}
-.Hazim:hover {
-    transform: scale(1.1);
-}
-.Bakir:hover {
-    transform: scale(1.1);
-}
-.Amar:hover {
-    transform: scale(1.1);
-}
-#div1 {
-    background: rgba(73, 115, 124, 0.116);
-}
-.aboutme {
-    text-align: left;
-    border-bottom: 2px solid #406169;
-    border-top: 2px solid #406169;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.hbutton, .rbutton, .abutton {
-    background-color: rgb(99, 161, 175);
-    border: none;
-    color: white;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 10px;
-    transition: all 0.4s;
-    margin: 10px 25px 0px 25px
-  }
-.hbutton:hover, .rbutton:hover, .abutton:hover {
-    background-color: rgb(61, 105, 114);
-}
-.iBakir, .iAmar, .iHazim, .iZijad {
-    font-family: 'Hubballi', cursive;
-    font-size: 150%;
-    font-weight: bold;
-    cursor: pointer;
-}
-.navbarcol {
-    background-color: #9dd6ffdc;
-}
-.regp {
-    color: #6c757d;
-    cursor: pointer;
+
+.about {
+    padding-left: 10px;
 }

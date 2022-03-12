@@ -1,0 +1,109 @@
+* {
+    text-align: center;
+}
+
+/* h1 {
+    color: #406169;
+    text-align: center;
+    border: 2px solid #5B787E;
+    cursor: default;
+} */
+body {
+    background-image: url(https://images.unsplash.com/photo-1646425111739-de69fef33bc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1502&q=80);
+    background-size: cover;
+    background-position: center;
+    margin: 0%;
+}
+.bftitle {
+    color: #406169;
+    cursor: default;
+    text-align: left;
+}
+.imgcaption {
+    margin-top: 17px;
+}
+img {
+    float: middle;
+    width: 220;
+    height: 340;
+    transition: all 1s;
+}
+p {
+    color: black;
+    cursor: default;
+    width: "220";
+    height: "310"
+}
+.nav {
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    display: inline-block;
+    background:rgb(145, 211, 226);
+    border: 1px solid #5B787E;
+    padding: 2px 5px 2px 5px;
+    margin: 2px 5px 2px 5px;
+    border-radius: 5px;
+    font-size: 125%;
+}
+#friends {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background:rgba(94, 120, 126, 0.24);
+    border-bottom: 2px solid #406169;
+}
+.Zijad:hover {
+    transform: scale(1.1);
+}
+.Hazim:hover {
+    transform: scale(1.1);
+}
+.Bakir:hover {
+    transform: scale(1.1);
+}
+.Amar:hover {
+    transform: scale(1.1);
+}
+#div1 {
+    background: rgba(73, 115, 124, 0.116);
+}
+.aboutme {
+    text-align: left;
+    border-bottom: 2px solid #406169;
+    border-top: 2px solid #406169;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.hbutton, .rbutton, .abutton {
+    background-color: rgb(99, 161, 175);
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: all 0.4s;
+    margin: 10px 25px 0px 25px
+  }
+.hbutton:hover, .rbutton:hover, .abutton:hover {
+    background-color: rgb(61, 105, 114);
+}
+.iBakir, .iAmar, .iHazim, .iZijad {
+    font-family: 'Hubballi', cursive;
+    font-size: 150%;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navbarcol {
+    background-color: #9dd6ffdc;
+}
+.regp {
+    color: #6c757d;
+    cursor: pointer;
+}
