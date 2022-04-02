@@ -138,19 +138,24 @@ figcaption {
 
 .grid-wrapper {
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .box > img {
-    width: 100%;
+    width: 70px;
+    height: 70px;
 }
 
 .box {
+    display: flex;
     background-color: #444;
-    padding: 100px;
-    margin: 40px;
+    padding: 70px;
+    margin: 20px;
     cursor: pointer;
+    width: 25%;
+    justify-content: center;
+    justify-self: center;
 }
 
 footer {
@@ -247,3 +252,14 @@ footer {
 .about {
     padding-left: 10px;
 }
+
+.bottom {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 8px #000000;
+    letter-spacing: 1px;
+    font-size: 35%;
+  }
