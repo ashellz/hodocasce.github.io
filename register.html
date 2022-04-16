@@ -1,17 +1,47 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <title>Hodočašće</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Hodočašće</title><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=League+Spartan:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <p>This part of the page is still in development! For more information contact shellz#3936 on discord
-        or stay tuned on the #website-update channel in the discord server. <a href="index.html">Click here
-             to get back to the home page!
-        </a>
-    </p>
+    <nav class="zone brown-gd sticky nav">
+        <ul class="main-nav">
+            <li><a href="">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="push"><a href="register.html
+                ">Register</a></li>
+        </ul>
+    </nav>
+    <div class="background-img">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="img/fb.png">
+                <img src="img/tw.png">
+                <img src="img/gp.png">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder=" User Id" required>
+                <input type="password" class="input-field" placeholder=" Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder=" User Id" required>
+                <input type="email" class="input-field" placeholder=" Email" required>
+                <input type="password" class="input-field" placeholder=" Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
