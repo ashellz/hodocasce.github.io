@@ -1,5 +1,9 @@
 /*TOGETHER*/
 
+html {
+    scroll-behavior:smooth;
+  }
+
 body {
     margin: auto 0;
     font-family: 'League Spartan', sans-serif;
@@ -117,11 +121,15 @@ figcaption {
 }
 
 .text-size-sm {
-    font-size: 60%;
+    font-size: 20px;
 }
 
 .text-size-md {
-    font-size: 0.9em;
+    font-size: 30px;
+}
+
+.text-size-big {
+    font-size: 40px;
 }
 
 .border {
@@ -310,6 +318,10 @@ footer {
     background: linear-gradient(180deg, rgb(165, 165, 165) 5%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%);
     background: -moz-linear-gradient(180deg, rgb(165, 165, 165) 5%, rgb(255, 255, 255) 100%);
     background: -o-linear-gradient(180deg, rgb(165, 165, 165) 5%, rgb(255, 255, 255) 100%);
+}
+
+.white {
+    background-color: white;
 }
 
 .brown-gd {
