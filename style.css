@@ -67,7 +67,6 @@ body {
 
 .box:hover {
     background: rgb(136, 74, 63);
-    overflow:hidden;
 }
 
 /*NAVIGATION*/
@@ -81,13 +80,6 @@ body {
     list-style: none;
     font-size: 0.7em;
     margin: 0;
-}
-
-@media only screen and (max-width: 600px) {
-    .main-nav {
-        font-size: 0.5em;
-        padding: 0;
-    }
 }
 
 .push {
@@ -293,15 +285,16 @@ span {
 }
 
 .box > img {
-    width: 170%;
-    height: 150%;
+    width: 154%;
+    height: 137%;
+    orientation: landscape;
 }
 
 .box {
     display: flex;
     background-color: #444;
-    padding: 26px;
-    margin: 8px;
+    padding: 20px 26px 26px 26px;
+    margin: 9px 4px 4px 4px;
     cursor: pointer;
     width: 13%;
     height: 22%;
@@ -316,6 +309,12 @@ footer {
 
 .padding {
     padding: 0px 10px 10px 10px;
+}
+
+.border-brwn-top {
+    border-top: 1px solid rgb(141, 96, 81);
+    padding-top: 7px;
+    margin: 0px 400px;
 }
 
 /*COLORS*/
@@ -396,6 +395,10 @@ footer {
     color: white;
 }
 
+.symbols {
+    font-family: 'Noto Sans Symbols 2', sans-serif;
+}
+
 /*ALIGN*/
 .align-left {
     display: flex;
@@ -415,7 +418,7 @@ footer {
 
 .top {
     position: absolute;
-    bottom: 68%;
+    bottom: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -437,4 +440,48 @@ footer {
 
 .text-size-sml {
     font-size: 13px;
+}
+
+@media only screen and (max-width: 900px) {
+    .box {
+        padding: 10px 16px 16px 16px;
+        margin: 10px 6px 6px 6px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .box > img {
+        width: 136%;
+        height: 120%;
+        orientation: landscape;
+    }
+    
+    .top {
+        font-size: 15%;
+        bottom: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+    .box {
+        padding: 10px 16px 16px 16px;
+        margin: 10px 6px 6px 6px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .box > img {
+        width: 176%;
+        height: 170%;
+        orientation: landscape;
+    }
+
+    .top {
+        font-size: 12%;
+        bottom: 90%;
+    }
 }
