@@ -3,7 +3,22 @@
 html {
     scroll-behavior:smooth;
     height: 100%;
-  }
+}
+
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-o-viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport {
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
 
 body {
     margin: auto 0;
@@ -155,12 +170,14 @@ figcaption {
 
 .border {
     border: 1px solid white;
-    padding: 25px 40px;
+    padding: 25px 20px;
+    margin: 0px 6px;
 }
 
 .border-brwn {
     border: 1px solid rgb(141, 96, 81);
     padding: 25px 40px;
+    margin: 20px 6px;
 }
 
 /*REGISTER*/
@@ -314,7 +331,7 @@ footer {
 .border-brwn-top {
     border-top: 1px solid rgb(141, 96, 81);
     padding-top: 7px;
-    margin: 0px 400px;
+    margin: 0px 40%;
 }
 
 /*COLORS*/
@@ -442,6 +459,12 @@ footer {
     font-size: 13px;
 }
 
+#m-responsible {
+    width: auto;
+    height: auto;
+    /* just gonna copy properties of the text and everytihng else specifically and gonnna edit it on max-width */
+}
+
 @media only screen and (max-width: 900px) {
     .box {
         padding: 10px 16px 16px 16px;
@@ -483,5 +506,17 @@ footer {
     .top {
         font-size: 12%;
         bottom: 90%;
+    }
+
+    .text-size-sm {
+        font-size: 15px;
+    }
+    
+    .text-size-md {
+        font-size: 25px;
+    }
+    
+    .text-size-big {
+        font-size: 35px;
     }
 }
