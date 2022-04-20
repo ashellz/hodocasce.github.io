@@ -144,7 +144,7 @@ a {
 
 .centered {
     position: absolute;
-    top: 50%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -176,7 +176,7 @@ figcaption {
 
 .border-brwn {
     border: 1px solid rgb(141, 96, 81);
-    padding: 25px 40px;
+    padding: 25px 20px;
     margin: 20px 6px;
 }
 
@@ -465,6 +465,49 @@ footer {
     /* just gonna copy properties of the text and everytihng else specifically and gonnna edit it on max-width */
 }
 
+@media only screen and (min-width: 1500px) {
+    .text-size-sm {
+        font-size: 25px;
+    }
+    
+    .text-size-md {
+        font-size: 35px;
+    }
+    
+    .text-size-big {
+        font-size: 45px;
+    }
+
+    .box {
+        padding: 18px 26px 26px 26px;
+        margin: 24px 16px 16px 16px;
+        width: 34px;
+        height: 34px;
+    }
+
+    .box > img {
+        width: 156%;
+        height: 135%;
+        orientation: landscape;
+    }
+    
+    .top {
+        font-size: 30%;
+        bottom: 90%;
+    }
+
+    .centered {
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-shadow: 2px 2px 8px #000000;
+        letter-spacing: 12px;
+        font-size: 200%;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .box {
         padding: 10px 16px 16px 16px;
@@ -482,6 +525,23 @@ footer {
     .top {
         font-size: 15%;
         bottom: 90%;
+    }
+
+    .border-brwn-top {
+        border-top: 1px solid rgb(141, 96, 81);
+        padding-top: 7px;
+        margin: 0px 30%;
+    }
+
+    .centered {
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-shadow: 2px 2px 8px #000000;
+        letter-spacing: 12px;
+        font-size: 50%;
     }
 }
 
@@ -513,10 +573,27 @@ footer {
     }
     
     .text-size-md {
-        font-size: 25px;
+        font-size: 20px;
     }
     
     .text-size-big {
-        font-size: 35px;
+        font-size: 25px;
+    }
+
+    .border-brwn-top {
+        border-top: 1px solid rgb(141, 96, 81);
+        padding-top: 7px;
+        margin: 0px 20%;
+    }
+
+    .centered {
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-shadow: 2px 2px 8px #000000;
+        letter-spacing: 12px;
+        font-size: 40%;
     }
 }
